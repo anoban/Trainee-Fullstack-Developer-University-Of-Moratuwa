@@ -1,0 +1,20 @@
+body {
+    background-color: azure;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.myh1 {
+    font-size: 25px;
+    color: red;
+    font-family: JetBrains Mono;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.syntax {
+    color: blue;
+    font-family: Consolas;
+    font-weight: 500;
+    font-size: 22px;
+}

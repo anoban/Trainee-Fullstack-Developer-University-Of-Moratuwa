@@ -1,0 +1,101 @@
+# code in a programme evolves over time
+# from the start of a new project code undergoes a cycle of changes almost sequentially
+
+# performance improvements
+# bug fixes
+# addition of new features
+
+# these imply
+# modification of existing code
+# introduction of new lines of code
+# deletion of old code chunks
+
+# above are followed by testing newly added / improved code
+# testing overall code
+
+# mark a new stable version of the overall code base
+
+# existing code base of a given programme that is in active development undergoes dynamic changes
+# experienced members of the development team are more familiar with a programme's code base
+# since they have worked on those projects/programmes for quite a long time
+
+# however such members may leave the development team, get promoted so and so
+# in such instances, project needs new members to fill the vacancies
+# but unlike those members who left, newcomers may not be that familiar with the code base
+# they are supposed to be working on
+# generally, in such instances other members of the team who are familiar with the code base
+# do a education session to new members and give them some time to assimilate the code base on their 
+# own
+
+# in such situations clean code becomes important
+# obscure code can make getting acquainted very tedious and time consuming
+
+# a clean code base must be simple & direct
+# easier to read & understand
+# easier to test & modify
+# easier to add new features with minimal changes to existing code
+
+# 4 main characters of clean code are readeable, maintainable, testable & extensible
+
+
+######################################
+# Readability of code in programmes  #
+######################################
+
+# key techniques to use when writing readable code
+# use meaningful names
+# use functions that do just one thing (single responsibility functions)
+# avoid deep nesting
+# avoid copy, pasting code
+# comment responsibly
+
+# is any programming structures exceed the nesting level of 3, it is called deep nesting
+# i.e
+
+
+'''
+if condition1:
+    if condition2:
+        while i < var:
+            do this
+        else:
+            do this
+            so this
+    elif condition3:
+        try:
+            expression1
+        except:
+            expression2
+            expression3
+        finally:
+            expression4
+            expression5
+    else:
+        do this
+elif:
+    do this
+else:
+    pass
+'''
+
+# use programming for negation when appropriate
+# testing multiple conditions may require deep nesting
+# to avoid this use programming for negation where we check for a negative output
+# instead of evaluating all conditions for a positive output
+
+# commenting
+
+# -----------------------------------------------
+# comment line 1
+# comment line 2
+# comment line 3
+# ------------------------------------------------
+
+# do not over elaborate
+# do not detail the programme logic in the comment
+# this will make modifying comments necessary when the cognate code is modified
+# do not add noise (obvious facts)
+# do not comment out code, just remove those lines
+# update comments when associated code gets updated
+# do not comment when the code itself is self explanatory
+# include institutional rules/restrictions that impact/influence the code 

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>jQuery selectors</title>
+        <script src="jquery-3.6.0.js"></script>
+        <style>
+            div ol li {
+                color: deeppink;
+                font-size: 30px;
+                font-family: consolas;
+                font-weight: bold;
+                font-style: italic;
+                text-align: center;
+            }
+            p {
+                font-family: Roboto;
+                font-size: 30px;
+                color: navy;
+                font-weight: bolder;
+                margin-left: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ol>
+                <li class="Name">John Lennon</li>
+                <li class="Age">26</li>
+                <li class="Job">Clerk</li>
+                <li class="From">North California</li>
+            </ol>
+            <br>
+            <ol>
+                <li class="Name">Jane Doe</li>
+                <li class="Age">23</li>
+                <li class="Job">Nurse</li>
+                <li class="From">South Dakota</li>
+            </ol>
+        </div>
+        <p id="jQ">Placeholder 1</p>
+        <p id="jQ1">Placeholder 2</p>
+        <script>
+            $("li").click(function(){
+                document.getElementById("jQ").innerHTML = "You clicked one of the ordered list elements!";
+            })
+            /*
+            $(".Name").click(function(){
+                let iterable = document.getElementsByClassName("Name");
+                for (let i = 0; i < iterable.length+1; i++){
+                    document.getElementsByClassName("Name")[i].innerHTML = iterable[i].toUpperCase();
+                }
+                document.getElementById("jQ1").innerHTML = "You clicked on one of the Names!";
+            })
+            */
+        </script>
+    </body>
+</html>

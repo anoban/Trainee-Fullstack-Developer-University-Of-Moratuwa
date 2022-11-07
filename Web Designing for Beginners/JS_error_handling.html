@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Error handling in JavaScript </title>
+        <style>
+            pre {
+                font-family:Consolas; 
+                font-size:22px;
+                color: navy;
+            }
+        </style>
+    </head>
+    <body>
+        <pre> Best way to handle JavaScript errors is by using a try catch block!:<br>
+        try {
+            Code block;
+        }
+        catch (error) {
+            Error handling code block;
+        }
+        finally {
+            This code block will execute regardless of errors occurring!;   
+        }</pre><br>
+        <input type="text" id="userinput" style="font-family:Consolas; font-size:22px; background-color:beige; border-radius:5px; text-align:center" placeholder="Type something"><br>
+        <button type="button" style="font-size:22px; color:black; background-color:aliceblue; margin-left:50px; margin-top:10px; border-radius:5px" onclick="errhandle();"> Test input </button>   
+        <p id="output" style="font-family:Roboto; font-size:22px; color:red; font-style:oblique; font-weight:bold"></p><br>
+        <p id="dummy" style="font-family:Roboto; font-size:22px; color:navy; font-style:oblique; font-weight:bold"></p>
+        <script>
+            function errhandle(){
+                const message = document.getElementById("output");
+                message.innerHTML = "";
+                let usrinput = document.getElementById("userinput").value;
+                try {
+                    if (usrinput == "") throw "empty";
+                    if (isNaN(usrinput)) throw "not a number!";
+                    x = Number(usrinput);
+                    if (x < 5) throw "too low!";
+                    if (x > 100) throw "too high!";
+                }
+                catch(error) {
+                    message.innerHTML = "Input is " + error;
+                }
+                finally {
+                    let oput = document.getElementById("dummy");
+                    oput.innerHTML = "finally!";
+                }
+            }
+        </script>
+        <p style="font-size:20px">Range error is thrown when we use a number outside of acceptable range.<br></p>
+        <pre>               &lt;script>
+                let x = 100;
+                try {
+                    x.toPrecision(500); // a number cannot have 500 significant digits in JS!
+                }
+                catch (rangeerror) {
+                    document.getElementById("err").innerHTML = rangeerror.name;
+                }
+                &lt;/script></pre>
+        <p id="err" style="font-size:22px; color:red; font-family:Consolas"></p>
+        <script>
+            let x = 100;
+            try {
+                x.toPrecision(500); // a number cannot have 500 significant digits in JS!
+            }
+            catch (rangeerror) {
+                document.getElementById("err").innerHTML = rangeerror.name;
+            }
+        </script>
+        <pre> Refernce error is thrown when an undeclared variable is referenced in JS!
+        &lt;script>
+            let y = 67;
+            try {
+                if (Y &lt;= 100) {
+                    document.write("Approved!");
+                }
+            }
+            catch (referror) {
+                document.getElementById("referror").innerHTML = referror.name;
+            }
+        &lt;/script>
+        </pre>
+        <p style="font-family:Consolas; color:red; font-size:22px" id="referror"></p><br>
+        <script>
+            let y = 67;
+            try {
+                if (Y <= 100) {
+                    document.write("Approved!");
+                }
+            }
+            catch (referror) {
+                document.getElementById("referror").innerHTML = referror.name;
+            }
+        </script>
+        <pre> Syntax errors are thrown when JS code is syntactically incorrect! 
+        &lt;script>
+            let name = "Maria Sorojovitzki";  
+            try {     
+                    eval("alert('Empty string)");       // missing single closing quotation mark!
+            }
+            catch (synerror) {
+                document.getElementById("synerror").innerHTML = synerror.name;
+            }
+        &lt;/script></pre>
+        <p style="font-family:Consolas; font-size:22px; color:red" id="synerror"></p><br>
+        <script>
+            let name = "Maria Sorojovitzki";  
+            try {     
+                    eval("alert('Empty string)");       // missing single closing quotation mark!
+            }
+            catch (synerror) {
+                document.getElementById("synerror").innerHTML = synerror.name;
+            }
+        </script>
+        <pre> Type errors in JS occur when unsupported attributes/functions are called upon variables/objects!. 
+        &lt;script>
+            const score = 100;
+            try {
+                Score = score.toUpperCase();        // cannot convert a number to upper case!
+            }
+            catch (tyerror) {
+                document.getElementById("tyerror").innerHTML = tyerror.name;
+            }
+        &lt;/script></pre>
+        <p style="font-family:Consolas; font-size:22px; color:red" id="tyerror"></p><br>
+        <script>
+            const score = 100;
+            try {
+                Score = score.toUpperCase();        // cannot convert a number to upper case!
+            }
+            catch (tyerror) {
+                document.getElementById("tyerror").innerHTML = tyerror.name;
+            }
+        </script>
+    </body>
+</html>

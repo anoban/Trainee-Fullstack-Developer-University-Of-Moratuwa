@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Pseudo elements are used to CSS style a portion of HTML selectors! </title>
+        <style>
+            h3:hover {
+                font-size: 45px;
+                color: black;
+                text-align: left;
+            } 
+            h3 {
+                font-family: CMU Seriff, cursive;
+                font-size: 30px;
+                color: mediumseagreen;
+                font-weight: bold;
+                font-style: italic;
+                text-align: center;
+            }
+            h3:before, h3::after { /* styling elements before the selector */
+                content: " ";
+                background-image: url(running_walking_300_wht.gif);
+                background-size: cover;
+                display: inline-block;
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+            }
+            p::first-letter { /* styling just the first letter of the selector */
+                font-size: 22px;
+                font-weight: bold;
+                line-height: 30px;
+            }
+            p:first-line { /* styling just the first line of the selector */
+                font-style: italic;
+                font-weight: bolder;
+                color: darkmagenta;
+                text-decoration: overline;
+            }
+        </style>
+    </head>
+    <body>
+        <h3> Developmental trauma </h3>
+        <p>
+            James* was born to a mother who suffered from chronic depression and a substance use disorder. She never physically abused him, but she could not provide consistent care. As a result, he faced poverty, homelessness, and severe neglect throughout his childhood. At one point, James was temporarily removed from his mother’s care and placed in a foster home, where he witnessed family violence and experienced emotional abuse.<br><br>
+
+            When James entered preschool, he faced significant mental and behavioral health problems, including aggressive behavior, difficulty regulating his emotions, and trouble forming healthy relationships with peers. Despite all these difficulties, he did not meet the diagnostic criteria for post-traumatic stress disorder (PTSD) when he was assessed by clinicians at ages 5, 9, and 16. (More than 70% of children treated by the National Child Traumatic Stress Network [NCTSN] do not meet the criteria [Purbeck, C. A., et al., NCTSN Core Data Set Report, 2021].) By the time James started high school, he had been diagnosed with oppositional defiant disorder (ODD), bipolar disorder, borderline personality disorder, and generalized anxiety disorder. He takes a cocktail of medications, but neither his diagnoses nor his treatments address the effects of his tumultuous early years.<br>
+        </p>
+    </body>
+</html>

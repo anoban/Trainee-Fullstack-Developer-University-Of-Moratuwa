@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> XML and JSON </title>
+        <meta charset="utf-8">
+        <style>
+            h2 {
+                font-family: Roboto;
+                font-size:25px;
+                color: maroon;
+                font-weight: bold;
+                font-style: oblique;
+            }
+            p {
+                font-family: Montserrat;
+                font-size: 22px;
+                color: navy;
+            }
+            pre {
+                font-family: Consolas;
+                font-size: 22px;
+                color: blue;
+                text-align: left;
+            }
+            body {
+                background-color: whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+        <h2> XML <img src="https://blog.sqlauthority.com/wp-content/uploads/2007/06/xml.png" height="120px" width="120px"> </h2>
+        <p> XML is an old markup language. XML stands for eXtensible Markup Language.<br>
+        It is much similar to HTML.<br>
+        XML was designed to store and transport data and is self descriptive.<br>
+        XML is commonly used in data distribution over the internet.<br>
+        In XML there aren't any predefined tags as in HTML. Users can create any tags as they please!<br>XML simplifies data availability, sharing, transport and platform changes.</p>
+        <pre>
+            &lt;?xml version="1.0" encoding="UTF-8"?>
+            &lt;note>
+                &lt;to> Janice &lt;/to>
+                &lt;from> Wattmann &lt;/from>
+                &lt;heading> Reminder &lt;/heading>
+                &lt;body> Don't forget me this weekend! &lt;/body>
+                &lt;sender> Jeanne Osbert &lt;sender>
+                &lt;greet> Wishing you well &lt;greet>
+            &lt;/note> 
+        </pre>
+        <h2> JSON <img src="https://www.json.org/img/json160.gif" width="100px" height="100px"> </h2>
+        <p> JSON stands for JavaScript Object Notation.<br>
+        It is a text file format for storing and transporting data.<br>
+        It is a relatively new entry.<br>
+        JSON is a lightweight data exchange format that is used to exchange information between computers.<br>
+        It is language independent.</p><br>
+        <pre>{
+                "squadName": "Super hero squad",
+                "homeTown": "Metro City",
+                "formed": 2016,
+                "secretBase": "Super tower",
+                "active": true,
+                "members": [
+                    {
+                        "name": "Molecule Man",
+                        "age": 29,
+                        "secretIdentity": "Dan Jukes",
+                        "powers": ["Radiation resistance", "Turning tiny", "Radiation blast"]
+                    },
+                    {
+                        "name": "Madame Uppercut",
+                        "age": 39,
+                        "secretIdentity": "Jane Wilson",
+                        "powers": ["Million tonne punch", "Damage resistance", "Superhuman reflexes"]
+                    },
+                    {
+                        "name": "Eternal Flame",
+                        "age": 1000000,
+                        "secretIdentity": "Unknown",
+                        "powers": ["Immortality", "Heat Immunity", "Inferno", "Teleportation", "Interdimensional travel"]
+                    }       
+                ]
+}</pre>
+    </body>
+</html>

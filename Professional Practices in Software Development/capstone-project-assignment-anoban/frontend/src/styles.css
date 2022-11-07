@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    color: white;
+    background-color: #272928;
+    width: 118px;
+    height: 42px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    color: #272928;
+    background-color: white;
+    border-color: #272928;
+    border-style: solid;
+}
+
+.form-button{
+    color: white;
+    background-color: #272928;
+    width: 118px;
+    height: 42px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 20px;
+ 
+}
+
+.form-button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    color: white;
+    background-color: #272928;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -1px;
+}
+
+input{
+    font-family: 'Poppins', sans-serif;
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    border-color: #272928;
+    border-radius: 10px;
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #3e4140;
+}
+
+input:focus{
+    border-color: #272928;
+}
+
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #a1aeaa;
+    letter-spacing: -1px;
+  }
+
+a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: -1px;
+    font-weight: 700;
+    color: #3e4140;
+}
+
+a:hover{
+    color: black;
+}
+
+button:disabled{
+    color: white;
+    background-color: #6b716e;
+    box-shadow: none;
+    width: 118px;
+    height: 42px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:disabled:hover{
+    box-shadow: none;
+}
+

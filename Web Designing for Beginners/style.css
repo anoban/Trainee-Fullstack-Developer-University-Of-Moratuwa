@@ -1,0 +1,57 @@
+
+body {
+    background-color: #E6F3FF !important;
+    padding: 5%;
+    
+}
+
+/* here we are going to stylize (just color in this case) the css class "message" we made in the 
+index.html file */
+.message {  /* the class name */
+    color: blueviolet;
+    font-style: italic;
+}
+
+/* styling for images */
+img {
+    float: right;
+}
+
+h2 { /* styling for type 2 headers */
+    align-self: center;
+    color: deeppink;
+    font-style: italic;
+    
+}
+
+.table_title {
+    font-size: 25px;
+    font-weight: bold;
+    align-content: center;
+    padding: 10px;
+}
+
+table { /* styling for tables */
+    border: 2.5px solid;
+    border-color: chocolate;
+    width: 60%;
+}
+
+td, th { /* styling for table header & table data elements */
+    text-align: left;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    font-family: serif;
+    font-size: 10px;
+    padding: 3px;
+    color: black;
+    background-color: orange;
+    position: fixed;
+    left: 0;
+    bottom: 0; /* no margins from the bottom of the webpage */
+    width: 100%;
+}
+

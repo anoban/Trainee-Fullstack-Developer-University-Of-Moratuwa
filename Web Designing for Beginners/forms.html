@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> How to make forms in HTML </title>
+        <!-- HTML forms are used to  collect usre inputs.
+        These text fields, password fields, check boxes, radio buttons, submit buttons, menus etc..
+        Info collected from such forms are sent to the server for processing -->
+        <style>
+            label {
+                color: navy;
+                font-weight: bold;
+                font-size: 20px;
+                padding: 10px;
+            }
+            input {
+                border: 2px solid;
+                border-color: red;
+                padding: 12px;
+                width: 20%;
+            }
+            body {
+                padding: 20px;
+                background-color: azure;
+                font-family: JetBrains Mono;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="fname"> First name</label>
+            <input type="text" id="fname"><br>
+            <label for="lname"> Last name </label>
+            <input type="text" id="lname"><br><br>
+            
+            <label for="gender"> Gender </label><br>
+            <label for="male"> Male </label>
+            <input type="radio" id="male"><br>
+            <label for="female"> Female </label>
+            <input type="radio" id="female"><br><br><br><br>
+            
+            <label for="edu"> Educational qualification </label><br><br>
+            <label for="bol"> Below GCE O/L </label>
+            <input type="checkbox" id="bol"><br>
+            <label for="al"> GCE A/L </label>
+            <input type="checkbox" id="al"><br>
+            <label for="univ"> University Degree </label>
+            <input type="checkbox" id="unic"><br>
+            <label for="hnd"> Higher National Diploma </label>
+            <input type="checkbox" id="hnd"><br>
+            <label for="dip"> Any other diplomas of one year duration </label>
+            <input type="checkbox" id="dip"><br>
+            <label for="pgdip"> PostGraduate Diploma </label>
+            <input type="checkbox" id="pgdip"><br>
+            <label for="mast"> Masters Degree </label>
+            <input type="checkbox" id="mast"><br>
+            <label for="doc"> Doctor's Degree </label>
+            <input type="checkbox" id="doc"><br><br><br><br>
+            
+            <label for="submit"> &rarr; Click here to submit the form </label>
+            <input type="button" id="submit" value="Submit"><br>
+        </form>
+    </body>
+</html>

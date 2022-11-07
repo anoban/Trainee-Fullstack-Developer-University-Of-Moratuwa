@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Handling HTML forms with input fields, check boxes, radio buttons & validations. </title>
+    </head>
+    <body>
+        <form name="userinfo">
+            <label for="fname" style="font-family:Helvetica; font-size:22px; color:red"> Enter your first name! </label><br>
+            <input type="text" id="fname" name="fname" style="background-color:aqua; width:200px; height:30px; border-radius:5px; padding-top:10px; font-size:22px"><br><br>
+            <label for="lname" style="font-family:Helvetica; font-size:22px; color:red"> Enter your last name! </label><br>
+            <input type="text" id="lname" name="lname" style="background-color:aqua; width:200px; height:30px; border-radius:5px; padding-top:10px; font-size:22px"><br>
+            <input type="button" value="Submit" onclick="return validate();" style="background-color:lightyellow; width:100px; height:50px; border-radius:10px; margin-top:10px; font-size:25px;" method="post">
+        </form>
+        <input type="button" value="Just click" onclick="dummy();" style="margin-top:20px; font-size:22px; color:black; background-color:aquamarine; border-radius:4px">
+        <script>
+            function validate() {   /* name of the function */
+                let fname = document.forms["userinfo"]["fname"].value;      /* reads in the input */
+                let lname = document.forms["userinfo"]["lname"].value;
+                if (fname == "" || lname == "") {
+                    alert("Required fields empty!");
+                } else {
+                    document.write("Hello there! " + lname + " " + fname);
+                }
+                return false;
+            }
+            function dummy () {
+                alert("Just kidding!")
+            }
+        </script>
+    </body>
+</html>

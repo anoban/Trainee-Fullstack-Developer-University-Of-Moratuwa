@@ -1,0 +1,9 @@
+<app-navbar title="Add New Teacher"></app-navbar>
+<div>
+    <form #addTeacherForm="ngForm"  class="form-container" (ngSubmit)="createTeacher(addTeacherForm.value)">
+        <input id="teacher-id" ngModel name="id" type="text" placeholder="ID">
+        <input id="teacher-name" ngModel name="name" type="text" placeholder="Name">
+        <input id="teacher-age" ngModel name="age" type="text" placeholder="Age">
+        <button id="teacher-add" class="form-button">Create</button>
+    </form>
+</div>

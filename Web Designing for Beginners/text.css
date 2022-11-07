@@ -1,0 +1,41 @@
+body {
+    background-color: #F8FFC0;
+    width: 100%;
+}
+
+h1 {
+    padding: 50px;
+    text-align: left;
+    font-size: 40;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial;    
+    align-content: flex-end;
+}
+
+img {
+    float: right;
+}
+
+p {
+    font-family: Heveltica;
+    font-size: 14;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    background-color: #F8EFF1;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+}
+
+.welcome {
+    font-family: fantasy;
+    font-size:20px;
+    color: darkgreen;
+    padding: 10px;
+    font-weight: bolder;
+}

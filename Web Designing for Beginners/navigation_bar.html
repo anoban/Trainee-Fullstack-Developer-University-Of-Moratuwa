@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Navigation bar </title>
+        <!-- navigation bar is usually displayed on top of the webpage!. 
+        Navigation bar is a UI element. These can be vertical or horizontal.
+        Vertical navigation bars are mostly deeigned to drop down when clicked!.
+        Navigation bars help users to jump back & forth between different pages. -->
+        <style>
+            ul {
+                font-family: Montserrat;
+                font-size: 24px;
+                color: blue;
+                background-color: darkturquoise;
+                font-weight: bold;
+                width: 100%;
+                margin: 0;
+                left: 0;
+                list-style-type: none; /* remove the bullets */
+            }
+            li {
+                display: inline; /* show list contents in one line */
+                padding: 10px;
+                text-decoration: none; /* remove the undrelines shown for hyperlinks */
+                align-content: space-between;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover {
+                background-color: coral;
+            }
+            a:active {
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- a horizontal navigation bar -->
+        <ul>
+            <li> <a href=""> Home </a> </li>
+            <li> <a href=""> HTML 5 </a> </li>
+            <li> <a href=""> CSS </a> </li>
+            <li> <a href=""> JavaScript </a> </li>
+            <li> <a href=""> CoffeeScript </a> </li>
+            <li> <a href=""> Ruby on Rails </a> </li>
+            <li> <a href=""> About Us </a> </li>
+            <li> <a href=""> Contact </a> </li>
+            <li> <a href=""> Contribute </a> </li>
+        </ul>
+    </body>
+</html>

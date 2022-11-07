@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>jQuery on() method</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+            h1 {
+                font-weight: bolder;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="H1">This is a dummy heading!</h1>
+        <button id="btn1">
+            <label for="btn1">Click!</label>
+        </button>
+        <script>
+             $(document).ready(function(){
+                $("#btn1").on({
+                    click:alert("You clicked the button!"),
+                    mouseenter:function(){
+                        document.getElementById("#H1").innerHTML = "You really clicked the button huh?";
+                    },
+                    hover:$("#H1").css({"color":"crimson", "font-style":"italic"});
+                });
+            }); 
+            
+            // doing stuff the hard way
+            $("#btn1").click(function(){
+                alert("You really clicked that button?....");
+            });
+            $("#btn1").hover(function(){
+                $("#H1").css({"color":"crimson", "font-style":"bold"});
+            });
+            $("btn1").dblclick(function(){
+                document.getElementById("#H1").innerHTML = ":)";
+            });
+        </script>
+    </body>
+</html>

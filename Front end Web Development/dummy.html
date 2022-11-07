@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>a dummy web page using jQuery</title>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+        <style>
+            p {
+                font-family: Consolas;
+                font-size: 40;
+                font-style: oblique;
+                font-weight: bold;
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="mydummyid">This is a dummy paragraph that will give you a dummy alert using plain JS!!</p>
+        <script>
+        document.getElementById("mydummyid").onclick = function(){
+                alert("Damn! You clicked the paragraph huh?....");
+            }
+        </script>
+        <!-- doing the same using jQuery -->
+        <p id="jq">This is another dummy paragraph that will use jQuery to give you the same dummy alert!!</p>
+        <script>
+            $("#jq").click(function(){
+                alert("This is an alert from jQuery!");
+            })
+        </script>
+        
+        <!-- oldschool JS -->
+        <button type="button" id="but" onclick="emphasize();">
+            <label for="but">Click here!</label>
+        </button>
+        <script>
+            function emphasize(){
+                document.getElementById("but").innerHTML = "Clicked!";
+            }
+        </script>
+    </body>
+</html>

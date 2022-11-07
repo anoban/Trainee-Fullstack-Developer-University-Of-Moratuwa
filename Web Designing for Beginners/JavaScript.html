@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Using JS inside HTML documents </title>
+    </head>
+    <body>
+        <h2 id="js" style="font-family:Montserrat; font-size:24px; font-weight:bold; color:blue"> </h2>
+        <h2 style="font-family:CMU Seriff; font-size:24px; font-weight:normal"> This text will not be modified by JavaScript! </h2>
+        
+        <p id="js1" style="font-family:Arial; font-size:24px; font-weight:bold; color:red"> Contents of this paragraph will be modified by JavaScript </p>
+        
+        <script>
+            document.getElementById("js").textContent="That's how JS works!";
+            document.getElementById("js1").textContent="Oh! Yes, they are gone now!";
+            /* .getElementById() function only applies for a single HTML element aince IDs are supposed to be unique! This cannot be used to retrieve multiple HTML elements by specifying them the same ID :( */
+        </script>
+        
+        <p style="font-family:Arial; font-size:22px"> JavaScript is an object oriented programming language! (OOP). <br> Objects in JS have properties & behaviours. </p>
+        
+        <pre style="font-family:Consolas; font-size:20px; color:darkslateblue"> Here's how JavaScript syntax looks;
+            let object = {
+                colour: #FF87R;
+                border: 20px;
+                border-color: #FD34F2;
+                width: 100%;
+                enlarge: function() {    }
+                rotate: function() {    }
+            };
+        </pre>
+        
+        <p style="font-size:20px"> In JavaScript behaviours are defined as functions and properties are defined as key: values pairs!<br>
+        A property of a JS object can be accessed by calling object.property <br>
+        And behaviours of a JS object can be accessed by calling object.behaviour() <br> </p>
+        
+        <p style="font-size:20px; color:red"> Classes are critical in OOP!. Rewriting the same code with minor changes for similar JS objects will result in redundant code! Classes help reduce code redundancy and improves code reuse! </p>
+        <pre style="font-size:20px; color:purple; font-family:Consolas">
+            class myclass {
+                constructor(value) {
+                this.property1 = value;
+                this.property2 = 12px;
+                this.property3 = bold;
+                this.behaviour = behaviour: myfunction(){    };
+                }
+            }; <br><br>
+            Below we minimize code redundancy by creating new JS objects using classes!.
+            Here code is minimal since we pass all the common object attributes as default class 
+            attributes and specify only the attributes that are unique to objects manually!<br>
+            let myclass_object_1 = new myclass("#56F#FD");
+            let myclass_object_2 = new myclass("#DF34F4");
+        </pre>
+    </body>
+</html>

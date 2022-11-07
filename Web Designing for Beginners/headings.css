@@ -1,0 +1,65 @@
+body {
+    padding: 10px;
+    background-color: #DAFFC0;
+}
+header {
+    background-color: lightgreen;
+    left: 0;
+    padding: 15px;
+}
+h1 {
+    color: crimson;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+}
+h2 {
+    color: brown;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+}
+h3 {
+    color: tomato;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+}
+h4 {
+    color: teal;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+}
+h5 {
+    color: cadetblue;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+}
+h6 {
+    color: darkmagenta;
+     text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+}
+img {
+    float: right;
+    padding: -10px;
+}
+footer {
+    color: coral;
+    bottom: 0;
+    left: 0;
+    font font-weight: bold;
+    font-family: "JetBrains Mono NL";
+    font-size: 25px;
+    padding: 10px;
+    background-color: yellow;
+}

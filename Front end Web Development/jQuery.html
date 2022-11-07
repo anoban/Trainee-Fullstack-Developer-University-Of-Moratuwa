@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>jQuery</title>
+        <script src="jquery-3.6.0.js"></script>
+    </head>
+    <body>
+ 
+        <!-- the above function will not work! since the script is given above associated the HTML element -->
+        <h1 id="js">This is a heading!</h1>
+        <button id="B1">
+        <label for="B1">JS Button</label>
+        </button>
+        <script>
+            function fn(){
+                let text = document.getElementById("js").innerHTML;
+                document.getElementById("js").innerHTML = text.toUpperCase();
+            }
+        </script>
+        
+        
+        <script>
+            $(document).ready(
+                $("#B2").click(function(){
+                let text = document.getElementById("jq").innerHTML;
+                document.getElementById("jq").innerHTML = text.toLowerCase();
+                    };
+                );
+            );
+        </script>
+        <h1 id="jq">THIS IS ANOTHER HEADING!</h1>
+        <button id="B2" onclick="fn1();">
+        <label for="B2">jQ Button</label>
+        </button>
+ 
+    </body>
+</html>

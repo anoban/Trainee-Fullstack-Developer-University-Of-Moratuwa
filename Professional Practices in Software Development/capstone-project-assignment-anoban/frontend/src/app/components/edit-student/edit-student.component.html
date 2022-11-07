@@ -1,0 +1,9 @@
+<app-navbar title="Edit Student Details"></app-navbar>
+<div>
+    <form #editStudentForm="ngForm"  class="form-container" (ngSubmit)="editStudent(editStudentForm.value)">
+        <input id="student-name" ngModel name="name" type="text" placeholder="Name" value={{studentData?.name}}>
+        <input id="student-age" ngModel name="age" type="text" placeholder="Age" value={{studentData?.age}}>
+        <input id="student-Hometown" ngModel name="hometown" type="text" placeholder="Hometown" value={{studentData?.hometown}}>
+        <button id="student-edit" class="form-button">Edit & Save</button>
+    </form>
+</div>

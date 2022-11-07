@@ -1,0 +1,161 @@
+h1.sitetitle {
+            font-family: Loto;
+            color: snow;
+            font-size: 80px;
+            font-weight: bold;
+            font-style: oblique;
+            display: inline;
+            width: 90%;
+            margin-bottom: 2px;
+            padding-bottom: 2px;
+            }
+h1.sitetitle:hover {
+            font-size: 100px;
+}
+h2 {
+            font-family: Montserrat;
+            font-size: 40px;
+            color: whitesmoke;
+            font-style: oblique;
+}
+li {
+            font-family: Roboto;
+            color: whitesmoke;
+            font-size: 22px;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            }
+body {
+            background-color: #003D8B;
+            }
+ul.ribbon {
+            font-family: Loto;
+            font-weight: 400;
+            list-style: none;
+            align-content: space-around;
+            width: 100%;
+            margin: 0;
+            left: 0;
+            }
+ul.ribbon li {
+            display: inline;
+            align-content: space-between;
+            padding: 0px;
+            margin-left: 3%;
+            margin-right: 3%;
+            cursor: pointer;
+            }
+ul.ribbon li:hover {
+            background-color: white;
+            border-radius: 4px;
+            padding: 5px, 5px, 5px, 5px; 
+            font-size: 28px;
+            cursor: pointer;
+            color: navy;
+            }
+
+input[name=searchbox]{
+            max-height:35px;
+            width: 230px;
+            font-family: Loto;
+            font-size: 25px;
+            border-radius: 5px;
+            border-color: white;
+            margin-top: 10px;
+            text-align: center;
+            position: relative;
+            float: right;
+            }
+input[name=searchbutton]{
+            font-family: Loto;
+            font-size: 25px;
+            border-radius: 5px;
+            border-color: white;
+            text-align: center;
+            float: right;
+            position: relative;
+            margin-left: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            }
+input[name=signin], input[name=signup] {
+            font-family: Loto;
+            font-size: 25px;
+            border-radius: 5px;
+            border-color: white;
+            text-align: center;
+            float: right;
+            position: relative;  
+            cursor: pointer;
+            margin-left: 5px;
+            margin-right: 5px;
+}
+
+div.row {
+                content: "";
+                clear: both;
+                position: fixed;
+                clear: both;
+                display: inline-block;
+                left: 95%;
+                }
+div.row div.col a img {
+                height: 40px;
+                widows: 40px;
+                display: inline-table;
+            }
+div.row div.col a img:hover {
+    width: 60px;
+    height: auto;
+}
+ table tr td img {
+                height: 200px;
+                width: 400px;
+            }
+table tr td img:hover {
+                height: 400px;
+                width: 800px;
+}
+table tr, th, td {
+                text-align: center;
+                font-family: Roboto;
+                color: whitesmoke;
+                font-size: 22px;
+                border-color: snow;
+                border-width: 3px;
+                border-style: solid;
+                border-radius: 3px;
+            }
+footer {
+    background-color: white;
+    color: navy;
+    height: auto;
+    width: 100%;
+    text-align: right;
+}
+div.foot ul li {
+    font-family: Loto;
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+div.foot ul {
+        align-content: space-around;
+        margin: 0;
+        width: 100%;
+        left: 0;
+        display: inline-block;
+        margin-top: 20px;
+}
+
+div.foot li:hover {
+            background-color: white;
+            border-radius: 4px;
+            padding: 5px, 5px, 5px, 5px; 
+            font-size: 28px;
+            cursor: pointer;
+            color: navy;
+            }

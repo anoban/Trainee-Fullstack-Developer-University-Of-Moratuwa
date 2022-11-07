@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Handling events in JavaScript </title>
+        <style>
+            body {
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="input" style="font-size:22px"> Click this &rarr; </label>
+            <input id="input" type="button" value="Click" onclick="click();" style="background-color:aquamarine; font-family:Helvetica; border-radius:10px; font-size:24px; margin-left:30px"> <br><br>
+            <!-- onclick keyword determines what happens when users click this button. In this case clicking this button will trigger the JavaScript function click() -->
+            
+            <label for="mouseover" style="font-size:22px"> Hover over this &rarr; </label>
+            <input id="mouseover" type="button" value="Hover" onmouseover="mover();" style="background-color:crimson; color:aliceblue; font-family:Montserrat; font-size:22px; border-radius:5px; margin-left:30px">
+            <br><br>
+            
+            <label for="ibox" style="font-size:22px"> Enter your first name! </label>
+            <input id="ibox" type="text" style="background-color:wheat; color:black; font-family:Montserrat; font-size:22px; border-radius:10px; margin-left:30px">
+            <p style="width:100px; background-color:antiquewhite; font-family:Helvetica; font-size:22px" onmouseover="greetme();"> Greet Me! </p>
+        </form>  
+        <script type="text/javascript" language="JavaScript">
+            function click(){
+                document.open();
+                document.write("<h1>Hello from a JavaScript event triggered response!</h1>");
+                document.close();
+            }
+            function mover(){
+                document.open();
+                document.write("<h2>Hello from a JavaScript event triggered response!</h2>");
+                document.close();
+            }
+            function greetme(){
+                var name = "Anoban";
+                document.write("Hello there! " + name);
+            }
+        </script>  
+    </body>
+</html>

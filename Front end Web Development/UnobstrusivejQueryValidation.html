@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Unobtrusive jQuery Validations</title>
+        <meta charset="utf-8">
+        <style>
+           div form {
+                width: 30%;
+                display: block;
+                font-family: Loto;
+                font-size: 25px;
+                border-style: solid;
+                border-color: navy;
+                border-radius: 10px;
+               border-width: 5px;
+                text-align: center;
+                background-color: #01FFB6;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            input[type="text"]{
+                text-align: center;
+                font-size: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+                width: 80%;
+                border-radius: 5px;
+            }
+            #sub {
+                font-size: 25px;
+                align-self: center;
+                background-color: indianred;
+                border-style: solid;
+                border-width: 3px;
+                border-color: blue;
+                border-radius: 10px;
+                color: white;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom:  5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                height: 60px;
+                width: 120px;
+                cursor: pointer;
+            }
+            #sub:active{
+                border-color: black;
+                background-color: white;
+                color: red;
+                font-size: 30px;
+                
+            }
+        </style>
+        <script src="jquery-3.6.0.js"></script>
+        <script src="jquery.validate.js"></script> <!-- depends on jQuery -->
+        <script src="jquery.validate.unobtrusive.js"></script> <!-- depends on jQuery & jquery.validate.js -->
+    </head>
+    <body>
+        <div>
+            <h2>Registration form</h2>
+            <form name="reg">
+                <label for="name">Enter your name here</label><br>
+                <input id="name" name="name" type="text" placeholder="Your name" data-val-required="Required" data-val="true"><br>
+                <span data-valmsg-for="name" data-valmsg-replace="true"></span><br>
+                
+                <label for="email">Enter your email here</label><br>
+                <input id="email" type="text" placeholder="Email address" name="email" data-val-required="Required" data-val="true"><br>
+                <span data-valmsg-for="email" data-valmsg-replace="true"></span><br>
+                
+                <label for="pwd">Enter your password here</label><br>
+                <input type="text" id="pwd" placeholder="Password" name="pwd" data-val-required="Required" data-val="true"><br>
+                <span data-valmsg-for="pwd" data-valmsg-replace="true"></span><br>
+                
+                <label for="cp">Confirm your password</label><br>
+                <input type="text" placeholder="Re-enter your password" id="cp" name="cp" data-val-required="Required" data-val="true"><br>
+                <span data-valmsg-for="cp" data-valmsg-replace="true"></span><br>
+                
+                <button type="submit" id="sub"><label for="sub">Submit</label></button><br>
+            </form>
+        </div>
+    </body>
+</html>

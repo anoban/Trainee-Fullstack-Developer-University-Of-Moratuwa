@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>AJAX with jQuery</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Labrador</h1>
+        <div id="addinfo"></div>
+        <script>
+            $(document).ready(function(){
+                    $("#addinfo").load("images.html", function(response, status, reqObj){ 
+                        // response - result if the request succeeds
+                        // status - status of the call
+                        // reqObj - XMLHTTPRequest object
+                        if (status == "success"){
+                            alert("Content loaded successfully!");
+                        } else if (status == "error"){
+                            alert("Error: "+  reqObj.status + " " + reqObj.statusText);
+                            // to see the error in action just give a false resource for loading
+                        }
+                    });
+                });
+        </script>
+    </body>
+</html>

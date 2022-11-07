@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>AJAX with jQuery</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+            img {
+                border: 10px;
+                border-style: solid;
+                border-width: 5px;
+                border-radius: 15px;
+                height: 600px;
+                width: 800px;
+                display: block;
+            }
+            #btn {
+                font-family: Roboto;
+                font-size: 25px;
+                font-weight: bold;
+                color: crimson;
+                height: 40px;
+                width: 150px;
+                border-width: 5px;
+                border-color: navy;
+                border-radius: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Labrador</h1>
+        <img src="https://www.akc.org/wp-content/uploads/2019/03/AdobeStock_491912561-800x600.jpeg">
+        <p style="font-family: Loto; font-size: 20px">The Labrador Retriever or Labrador is a British breed of retriever gun dog. It was developed in the United Kingdom from fishing dogs imported from the colony of Newfoundland (now a province of Canada), and was named after the Labrador region of that colony. It is among the most commonly kept dogs in several countries, particularly in the Western world.<br>
+        The Labrador is loyal, obedient and playful. It was bred as a sporting and hunting dog, but is widely kept as a companion dog. It may also be trained as a guide or assistance dog, or for rescue or therapy work.</p><br>
+        <button id="btn"><label for="btn">More info</label></button><br>
+        <div id="addinfo"></div>
+        <script>
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    .ajax("moreinfo.html", { 
+                        success: function(result){ // success callback function
+                            $("#addinfo").append(result); // append the fetched results
+                            $("#btn").hide();   // hide the button
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Handling multimedia files with CSS </title>
+        <style>
+            li {
+                display: inline;          
+                font-family: Consolas;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            ul {
+                width: 100%;
+                list-style-type: none;
+                background-color: aquamarine;
+                text-align: center;
+                margin: auto;
+                padding: 2px;
+                align-items: center;
+            }
+            li:hover, h2:hover {
+                background-color: bisque;
+                transform:scalex(1.2);
+                text-align: center;
+                max-width: 50%;
+            }
+            .animated:hover {
+                transform:translateX(1000px);
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="font-family:Haveltica; font-size:25px; font-weight:bold; font-style:italic"> Styling images with CSS  </h2>
+        <img src="happy-birthday.png" width="500" height="600" style="border:5px solid; border-color:aqua; border-radius:15px;">
+        <!-- specifying dimensions for images can make them irresponsive in devices other than computers!
+        Thus the auto keyword is used where the browser is allowed the freedom to determine the optimum dimensions for the image and render them! -->
+        
+        <h2 style="font-family:Haveltica; font-size:25px; font-weight:bold; font-style:italic"> Auto adjusting image!  </h2>
+        <img src="King_Julien_(All_Hail_King_Julien).webp" style="max-width:auto; max-height:auto; border-radius:10px; border-width:5px; border-style:solid">
+        
+        <img src="balloonbg.png" style="margin-left:auto; margin-right:auto; display:block; max-width:90%">
+        
+        <h2 style="font-family:Haveltica; font-size:25px; font-weight:bold; font-style:italic"> Transparency can be introduced using the opacity CSS property!  </h2>
+        <img src="Chocolate-Cupcakes-SM-5629.jpg" style="opacity:0.5">
+        <!-- the higher the opacity value the less transparent the image will be -->
+        
+        <video autoplay controls style="max-height:50%; max-width:70%; display:block; margin-left:auto; margin-right:auto">
+            <source src="Sia_Never_Give_Up_Lion_Soundtrack.mp4" type="video/mp4">
+        </video>
+        
+        <!-- CSS animations -->
+        <ul>
+            <li> Home </li>
+            <li> Products </li>
+            <li> New arrivals </li>
+            <li> Islandwide stores </li>
+            <li> Contact </li>
+        </ul>
+        
+        <img src="animate-run-progress-04.gif" style="max-height:20%; max-width:25%; border-color:black; border-radius:10px; border-width:3px" class="animated">
+        
+    </body>
+</html>

@@ -1,0 +1,23 @@
+SOFTWARE DEVELOPMENT LIFE CYCLE
+
+SDLC is a series of steps invoved in developing good software
+SDLC fall under the project management area of software development
+
+With SDLC;
+Project managemnt happens in an organized & structured way
+Cost of development is reduced
+All stakeholders are given a chance to voice their opinions from the very beginning of the development
+process
+Help developers better understand what they are doing and why
+Improved software quality
+Shortened development cycles
+
+SDLC is made of 7 stages:
+Planning (requirement gathering & analyses)
+Design 
+Development (implementation & coding)
+Testing
+Deployment
+Maintenance
+
+

@@ -1,0 +1,46 @@
+Content model defines what set of contents each element is allowed to have.
+This means that such models define what other elements are allowed to be nested inside the defined elements.
+
+Every HTML element has a default dispaly value depending on what type of element it is.
+There are two display values: inline level & block level
+Modern HTML splits these two into seven models
+An HTML body part may contain several code blocks.
+These blocks can contain many inline elements.
+ 
+Block elements are large building blocks of a web page!
+Web browsers automatically add a line break at the end of block elements
+
+Inline elements are used to mark parts of block elements.
+Brwsers do not automatically add line breaks at the end of inline elemens.
+Block elements begin in a new line while inline elements do not!.
+
+Modern HTML has 7 content models:
+Metadata content
+Sectioning content
+Flow content
+Heading content
+Phrasing content
+Embedded content
+Interactive content
+
+Metadata content defines the behaviour of all other contents
+e.g. base, command, style, link, noscript, title tags!
+
+Flow contents are elements that are included in the normal flow of the document.
+e.g. img, header, footer, table, form, label, input, button, h1, h2, h3, ... etc...
+
+Sectioning content define the scope of headers and footers.
+e.g. article, aisde, nav, section tags
+
+Heading contents define the headers of a document.
+e.g. h1, h2, h3, h4, ... hgroup.. etc...
+
+Phrasing content is the text content of a document and the elements used to markup text within paragraph level containers.
+e.g. b, i, strong, small, big, etc
+
+Embedded contents are the elements that import external resources into the document.
+e.g. img, audio, embed, video, object... etc
+
+Interactive content are the elements specifically intended for user interaction.
+
+These content models are not at all exclusive. Most elements that belong to one content model will fall under many other content models!.

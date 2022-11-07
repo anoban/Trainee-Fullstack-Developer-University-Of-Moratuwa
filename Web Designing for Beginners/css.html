@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Importing external css sheets </title>
+        <link rel="stylesheet" type="text/css" href="external.css">
+        <!-- linking an external CSS file -->
+        <!-- here is an internal CSS styling -->
+        <style>
+            .internal_css {
+                font-size: 30px;
+                align-self: center;
+                color: maroon;
+                font-family: CMU serif;
+                font-weight: bolder;
+                font-style: italic;
+            }
+            .csssyntax, pre {
+                font-size: 22px;
+                color: navy;
+                font-family: Gill sans;
+                font-weight: 400;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="myh1"> Let's get started with CSS </h1>
+        <p> CSS styling can be applied to HTML documents to enhance the visual appeal of the webpage and improve user experience! CSS styling can be applied externally/internally/inline!
+        This document is styled with an external CSS document!
+        When using external CSS files to style webpages, we can modify the entire outlook of a webpage by modifying just one page! </p><br>
+        <p> CSS syntax is essentially <b><i> key:values pairs! </i></b>
+        Initially one has to declare which HTML tag the styles defined downstream apply to and then property and the styles are defined inside curly braces! </p><br>
+        
+        <p class="syntax"> selector { declaration : value; <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;declaration: value; <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;declaration: value; } </p><br>
+        
+        <p class="syntax"> HTML_tag { property1 : value; <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;property2: value; <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;property3: value; } </p><br>
+        
+        <p class="syntax"> .user_defined_class { property1 : value; <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;property2: value; <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;property3: value; } </p><br>
+        
+        <p> When we want to apply styling to just a few HTML elements of one type but not for all in the entire document, classes can be made for HTML tags, which can then be used to apply CSS to just that subset of HTML tag element! </p>
+        
+        <p class="internal_css"> This line is styled with an internal CSS code chunk! i.e. with the following CSS code is in the same HTML document! </p>
+        
+        <p class="csssyntax"> <pre>  .csssyntax, pre { font-size: 22px;
+                                color: navy;
+                                font-family: Gill sans;
+                                font-weight: 400; }
+                              </pre>
+        </p> 
+        <p style="font-family:Consolas; color:deeppink; font-size:24px"> This line is styled with an inline css! Inline CSS styling has the highest precedence!, followed by internal, external CSS styles with browser defaults at last! The inline css applied to this paragraph is &lt;p style="font-family:Consolas; color:deeppink; font-size:24px"&gt; </p> 
+    </body>
+</html>

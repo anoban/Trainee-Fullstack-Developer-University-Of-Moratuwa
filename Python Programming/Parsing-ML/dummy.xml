@@ -1,0 +1,38 @@
+<?xml version = "1.1" encoding = "utf-8"?>
+<!-- do not use any capital letters in the version declaration tag! -->
+<store_items date="14/05/2022" time="05:13 GMT+5.30" storeID="N06">
+    <in_stock>
+        <item>
+            <name>Dell Inspiron 3593</name>
+            <yom>2019</yom>
+            <make>Dell</make>
+            <warranty>2</warranty>
+            <storage>1TB</storage>
+            <memory>8GB</memory>
+            <cpu>2.3Ghz i3 10th Gen</cpu>
+            <gpu>no</gpu>
+        </item>
+        <item>
+            <name>ASUS Zenbook</name>
+            <yom>2022</yom>
+            <make>ASUS</make>
+            <warranty>2</warranty>
+            <storage>512GB</storage>
+            <memory>16GB</memory>
+            <cpu>3.6Ghz i7 12th Gen</cpu>
+            <gpu>NVIDIA GeForce RTX3301</gpu>
+        </item>
+    </in_stock>
+    <out_of_stock>
+        <item>
+            <name>Lenovo Thinkpad</name>
+            <yom>2021</yom>
+            <make>Lenovo</make>
+            <warranty>1</warranty>
+            <storage>1TB</storage>
+            <memory>4GB</memory>
+            <cpu>3.6Ghz Atom</cpu>
+            <gpu>no</gpu>
+        </item>
+    </out_of_stock>
+</store_items>

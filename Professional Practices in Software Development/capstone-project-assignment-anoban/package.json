@@ -1,0 +1,34 @@
+{
+  "name": "capstone-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm i forever --prefix ./frontend && export NODE_ENV=test-backend && NODE_OPTIONS='--experimental-vm-modules --experimental-specifier-resolution=node' jest --verbose ./backend/test --forceExit",
+    "start": "node backend/index.js",
+    "delete-db": "del-cli db.sqlite",
+    "migrate": "npm run delete-db && knex migrate:latest --knexfile knexfile.js",
+    "seed": "knex seed:run --knexfile knexfile.js",
+    "db": "npm run migrate && npm run seed"
+  },
+  "author": "keetmalin.13@cse.mrt.ac.lk",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "knex": "^2.1.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "del-cli": "^4.0.1",
+    "cross-env": "^7.0.3",
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
+  }
+}

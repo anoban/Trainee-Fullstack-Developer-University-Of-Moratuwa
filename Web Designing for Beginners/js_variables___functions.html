@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Variables & functions in JavaScript </title>
+        <style>
+            h1, p {
+                font-family: Montserrat;
+                color: dodgerblue;
+                font-weight: bold;
+                font-style: oblique;
+            }
+        </style>
+    </head>
+    <body>
+        <p> JavaScript supports different data types! Numerals, strings, objects etc... </p>
+        <h1 id="greet_user"> </h1>
+        <h3 style="font-family:Arial" id="greet"> </h3>
+        <h3 style="font-family:Calibri" id="gm"> </h3>
+        <script>
+            var lname = "Mahadeva"; /* declaration & instantiation in the same line! */
+            var fname; /* just declaration */
+            fname = "Kulani"; /* instantiation */
+            document.getElementById("greet_user").textContent = "Welcome back " + fname + " " + lname + "!";
+            
+            /* however the above code is redundant, since we use the same code again and again!
+            We can create a function to do this! */
+            function display(id, text){
+                document.getElementById(id).textContent = text;
+            }
+            
+            display("greet", "Good to see you back " + fname + " " + lname + "!");
+            display("gm", "Good Morning fellas!");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> CSS box model: margins, paddings & layouts </title>
+        <style>
+            img {
+                /* side wise style specifications take precedence over specifications for the entire HTMl object. i.e. padding-left: 10px will take precedence over padding: 20px! */
+                padding-bottom: 10px;
+                padding-top: 30px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-style: double;
+                border-color: magenta;
+                border-width: 10px;
+                border-right: 15px;
+                border-right-color: blueviolet;
+                border-right-style: solid;
+                border-left: 15px;
+                border-left-color: bisque;
+                border-left-style: solid;
+                margin: 20px;
+                margin-left: 20%;
+                width: 60%;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="font-family:cursive; font-size:20px; color:darkslateblue"> 
+              Every HTML element can be considered as a box! <br>
+              This box model comprises of boxes enclosed in boxes!<br>
+              The outermost box is the margin!<br>
+              The layer just inwards margin is border!<br>
+              And the layer right next to the HTML element is padding!<br>
+              Thus when going from the edge of an HTML element, there are padding, border and margin!<br>
+        </p>
+        <img height="580" width="835" src="boxmodelpng.png" style="max-height:580; max-width:835; position:relative; display:block">
+        <p style="font-size:20px; font-family:Arial"> Margins of adjacent HTML objects can overlap! This will result in the effective margin being that of the object having highest margin value! </p>
+    </body>
+</html>

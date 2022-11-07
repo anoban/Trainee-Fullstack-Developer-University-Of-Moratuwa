@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>jQuery effects</title>
+        <meta charset="utf-8">
+        <script src="jquery-3.6.0.js"></script>
+        <style>
+            p {
+                font-family: Loto;
+                font-size: 30px;
+                color: crimson;
+                font-weight: bold;
+            }
+            #fadef, #fades, #fadevs {
+                font-family: Roboto;
+                font-size: 32px;
+                color: navy;
+                font-weight: bolder;
+                font-style: italic;
+            }
+            button {
+                height: 50px;
+                width: 100px;
+                color: black;
+                border-width: 5px;
+                border-color: blue;
+                background-color: azure;
+                font-size: 25px;
+                border-radius: 15px;
+                margin-right: 10px;
+                margin-left: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            button:active {
+                background-color: beige;
+                color: red;
+                font-size: 30px;
+            }
+            div {
+                height: 60px;
+                display: inline-block;
+            }
+            .fade button {
+                height: 50px;
+                width: 180px;
+                color: black;
+                border-width: 5px;
+                border-color: blue;
+                background-color: azure;
+                font-size: 25px;
+                border-radius: 15px;
+                margin-right: 10px;
+                margin-left: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .fade button:active {
+                background-color: beige;
+                color: red;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <button id="show"><label for="btnf">Show</label></button>
+            <button id="hide"><label for="btnf">Hide</label></button>
+            <button id="toggle"><label for="btnf">Toggle</label></button>
+        </div>
+        <p id="fast">When you click the buttons this paragraph will appear/disappear fastly!</p>
+        <p id="slow">When you click the buttons this paragraph will appear/disappear slowly!</p>
+        <p id="vslow">When you click the buttons this paragraph will appear/disappear very slowly!</p>
+        <br>
+        <div class="fade">
+            <button id="fout"><label for="fout">Fade out</label></button>
+            <button id="fin"><label for="fin">Fade in</label></button>
+            <button id="ftoggle"><label for="ftoggle">Fade toggle</label></button>
+            <button id="fto"><label for="fto">Fade to</label></button>
+        </div>
+        <p id="fadef">When you click the buttons this paragraph will fade fastly!</p>
+        <p id="fades">When you click the buttons this paragraph will fade slowly!</p>
+        <p id="fadevs">When you click the buttons this paragraph will fade very slowly!</p>
+        <br>
+        <button id="reveal"><label>Reveal</label></button>
+        <button id="reset"><label>Reset</label></button>
+        <div id="box"></div>
+        <br>
+        <script>
+            $(document).ready(function(){
+                $("#show").click(function(){
+                    $("#fast").show("fast");
+                    $("#slow").show("slow");
+                    $("#vslow").show("1500"); // time in milliseconds!
+                });
+                $("#hide").click(function(){
+                    $("#fast").hide("fast");
+                    $("#slow").hide("slow");
+                    $("#vslow").hide("1500");
+                });
+                $("#toggle").click(function(){
+                    $("#fast").toggle("fast");
+                    $("#slow").toggle("slow");
+                    $("#vslow").toggle("1500");
+                });
+                $("#fout").click(function(){
+                    $("#fadef").fadeOut("fast");
+                    $("#fades").fadeOut("slow");
+                    $("#fadevs").fadeOut("1500");
+                });
+                $("#fin").click(function(){
+                    $("#fadef").fadeIn("fast");
+                    $("#fades").fadeIn("slow");
+                    $("#fadevs").fadeIn("1500");
+                });
+                $("#ftoggle").click(function(){
+                    $("#fadef").fadeToggle("fast");
+                    $("#fades").fadeToggle("slow");
+                    $("#fadevs").fadeToggle("1500");
+                });
+                $("#fto").click(function(){
+                    $("#fadef").fadeTo("fast", 0.4);    // needs to specify the opacity level
+                    $("#fades").fadeTo("slow", 0.4);
+                    $("#fadevs").fadeTo("1500", 0.4);
+                });
+                $("#reveal").click(function(){
+                    $("#box").animate({
+                        width:"200px",
+                        height:"200px",
+                        backgroundColor:"cyan",
+                        borderStyle:"solid",
+                        borderWidth:"5px",
+                        borderColor:"blue"
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> JavaScript loops and conditions </title>
+        <meta charset="utf-8">
+        <style>
+            em {
+                font-size: 22px;
+                color: red;
+                font-weight: bold;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="font-size:35px; color:navy; text-align:center; padding-top:50px"> JavaScript provides 5 different types of loops. </h2>
+        <dl style="font-size:20px">
+            <dt> <em> for loop </em> </dt>
+            <dd> iterates through a block of code for a given number of times. </dd>
+            <dt> <em> for/in loop </em> </dt>
+            <dd> loops through the properties of an object </dd>
+            <dt> <em> for/of loop </em> </dt>
+            <dd> loops through the values of an inerrable JS object </dd>
+            <dt> <em> while loop </em> </dt>
+            <dd> loops through a block of code while the given condition is true </dd>
+            <dt> <em> do/while loop </em> </dt>
+            <dd> loops through a block of code while the given condition is true. However the loop body expressions will be executed in the first iteration whether the loop condition is met or not. </dd>
+        </dl>
+        <p style="font-size:22px"> It is important to use the <em> let </em> keyword to declare local variables inside JavaScript loops, since declarations using <em> var </em> keyword will make those variables global. </p>
+        <pre style="font-family:Consolas; font-size:22px; color:darkred">
+            Syntax of JS for loop is quite similar to C++ for loops!
+            <font color="blue">let text = "";       /* declaration & instantiation */
+            for (let i = 0; i &lt; 10; i++) {
+                text += "The number is " + i + "&lt;br>";
+            }</font><br><br>
+            Syntax of JS for/in loop in quite similar to Python for loops! 
+            Hovever they are not similar functionally. Here this loop iterates through the keys of JS objects!.
+            <font color="blue">const Natalie = {fname:"Natalie", lname:"Martinez", age:27, race:"Hispanic", married:0}; 
+            let text = "";
+            for (let key in Natalie) {
+                text += Natalie[key];
+            }</font><br>
+            "key in Natalie" loops over the keys of the JS object Natalie, and these keys are used to 
+            extract their cognate values by object[key] method!. 
+            Then the extracted values are concatenated with the string text.<br><br>
+            Syntax of JS for/of loop! This is functionally similar to Python's for loops but not so syntactically!
+            <font color="blue">let chararray = ['A', 'N', 'y', 'q', 'D', 'L'];         /* a JS array */
+            let text = "";
+            for (let i of chararray) {
+                text += i;
+            }</font><br><br>
+            While loops in JS loops over the loop body as long as the loop condition is true!
+            Syntax:
+            <font color="blue">let i = 0;
+            let sum = 0;
+            while (i &lt; 100) {
+                sum += i;
+                i++;
+            }</font><br><br>
+            Do while loop in JS is identical to C++ do while loops. Loop body will execute regardless of
+            the loop condition once but subsequent iterations will only happen if the loop condition is
+            met. 
+            Syntax:
+            <font color="blue">let i = 100;
+            sum = 0;
+            do {
+                sum += i;    
+            } while (i &lt; 10)</font><br><br>
+        </pre>
+        <pre style="font-family:Consolas; font-size:22px; color:darkred"> <em>if</em> conditions in JavaScript has similar syntax to C++ if conditions!
+        <font color="blue">var age = 56;
+        if (age &lt; 20) {
+            message = "Teenager";
+            }
+        else {
+            message = "An adult";
+            }</font><br><br>
+        </pre>
+        <script>
+            
+        </script>
+    </body>
+</html>
